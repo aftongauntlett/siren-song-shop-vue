@@ -46,20 +46,20 @@ export default {
           display: "About",
         },
         {
+          name: "Wares",
+          display: "Wares",
+        },
+        {
+          name: "Blog",
+          display: "Blog",
+        },
+        {
+          name: "Donate",
+          display: "Donate",
+        },
+        {
           name: "Contact",
           display: "Contact",
-        },
-        {
-          name: "Locations",
-          display: "Locations",
-        },
-        {
-          name: "Careers",
-          display: "Careers",
-        },
-        {
-          name: "Employee",
-          display: "Employee Login",
         },
       ],
     };
@@ -69,7 +69,7 @@ export default {
 
 <style>
 .border-top {
-  border-top: 1px solid #ffa500 !important;
+  border-top: 1px solid green !important;
   background-color: #ffffff;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -80,7 +80,7 @@ export default {
 }
 
 .copyright {
-  border-top: 1px solid #ffa500;
+  border-top: 1px solid green;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -91,7 +91,7 @@ export default {
 
 .footer-header {
   font-size: 20px;
-  color: #000080;
+  color: green;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   text-align: left;
