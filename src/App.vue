@@ -1,32 +1,26 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div id="app" class="d-flex flex-column">
+    <Navbar />
     <router-view />
+    <Footer class="mt-auto" />
   </div>
 </template>
 
+<script>
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+export default {
+  components: { Navbar, Footer },
+};
+</script>
+
 <style lang="scss">
 #app {
-  font-family: "Raleway", sans-serif;
+  font-family: "Forum", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  min-height: 100vh;
+  color: #00675b;
 }
 </style>
