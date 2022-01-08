@@ -6,7 +6,7 @@
         width="100"
         fluid
         alt="Responsive image"
-        class="pb-3"
+        class="pb-3 nav-image"
       ></b-img>
     </b-navbar-brand>
 
@@ -41,11 +41,21 @@ export default {
   border-bottom: 1px solid #26a69a;
 }
 
+.navbar-light .navbar-nav .nav-link:active {
+  color: #26a69a !important;
+  border-bottom: 1px solid #26a69a;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #00675b;
 }
 
 .b-nav-item {
   color: #00766c !important;
+}
+
+.router-link-active {
+  color: #26a69a !important;
+  border-bottom: 1px solid #26a69a;
 }
 </style>
