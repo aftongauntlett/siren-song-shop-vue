@@ -8,20 +8,7 @@
         <b-container class="d-flex">
           <div class="header-text mb-auto p-5 mr-auto">
             <div>Welcome to</div>
-            <div
-              class="sparkle-container"
-              @mouseover="showSparkles = true"
-              @mouseout="showSparkles = false"
-            >
-              <Sparkles
-                v-show="showSparkles"
-                v-for="sparkle in sparkleCount"
-                :key="sparkle"
-                :id="sparkle"
-                class="sparkle"
-              />
-              <h2>Siren Song Shop</h2>
-            </div>
+            <h2>Siren Song</h2>
           </div>
         </b-container>
       </div>
@@ -56,41 +43,23 @@
         </div>
       </div>
     </div>
-    <div>
-      <b-button
-        type="button"
-        class="buttons btn btn-outline-primary mb-5"
-        :to="{ name: 'Donate' }"
-        target="_blank"
-        variant="link"
-      >
-        Donate to our Cause
-      </b-button>
 
-      <div
-        class="about-image"
-        :style="`background-image: url(/images/cally-and-gerek.jpg)`"
-      ></div>
-    </div>
+    <Button />
 
-    <!-- <b-button
-        target="_blank"
-        type="button"
-        class="buttons btn btn-outline-primary"
-        :to="{ name: 'Wares' }"
-        variant="link"
-      >
-        View Our Wares
-      </b-button> -->
+    <div
+      class="about-image"
+      :style="`background-image: url(/images/cally-and-gerek.jpg)`"
+    ></div>
   </div>
 </template>
 
 <script>
 import Sparkles from "@/components/Sparkles";
+import Button from "@/components/Button";
 export default {
   mounted() {},
 
-  components: { Sparkles },
+  components: { Sparkles, Button },
   data() {
     return {
       sparkleCount: 50,
@@ -101,10 +70,6 @@ export default {
 </script>
 
 <style>
-.buttons {
-  text-decoration: unset !important;
-}
-
 .sparkle {
   z-index: 0;
 }
@@ -136,9 +101,9 @@ export default {
   background-size: cover;
 }
 
-/* .about-image {
+.about-image {
   width: 600px;
-} */
+}
 
 .background-image-cover {
   background-color: rgba(12, 37, 63, 0.58);
@@ -173,23 +138,10 @@ export default {
   font-size: 22px;
 }
 
-.btn {
-  color: #00675b;
-  border: #00675b solid 1px;
-  border-radius: unset;
-  padding: 15px;
-  font-size: 20px;
-  letter-spacing: 2.5px;
-}
-
-.btn-outline-primary:hover {
-  border: #00766c solid 1px;
-  background-color: #ffffff !important;
-  color: #00766c;
-}
-
 .sparkle-container {
   position: relative;
+  max-width: 20%;
+  margin: auto;
 }
 
 .sparkle-container > h2 {
