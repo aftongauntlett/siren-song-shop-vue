@@ -1,16 +1,16 @@
 <template>
   <div
     :style="`top: ${top}%; left: ${left}%; `"
-    class="sparkles"
+    class="flurries"
     id="example-1"
   >
     <transition name="slide-fade" v-on:leave="leave" :css="false">
       <div
         :style="`color: ${color}; font-size: ${size}px;`"
         v-if="show"
-        :id="`sparkle-${id}`"
+        :id="`snow-${id}`"
       >
-        *
+        .
       </div>
     </transition>
   </div>
@@ -21,36 +21,31 @@ import Velocity from "velocity-animate";
 export default {
   props: ["id"],
   mounted: function () {
-    setInterval(this.showSparkle, Math.random() * 750 + 500);
+    setInterval(this.showSnow, Math.random() * 1000);
 
-    this.showSparkle();
+    this.showSnow();
   },
 
   methods: {
-    showSparkle() {
-      this.top = Math.random() * 100 - 20;
-      this.left = Math.random() * 100;
-      this.size = Math.random() * 60 + 30;
+    showSnow() {
+      this.top = Math.random() * 500 - 100;
+      this.left = Math.random() * 1000 - 500;
+      this.size = Math.random() * 100 + 20;
       this.color = this.colors[Math.floor(Math.random() * this.colors.length)];
       this.show = true;
       setTimeout(() => {
         this.show = false;
-      }, 25);
+      }, 125);
     },
     leave(el, done) {
       Velocity(
         el,
         {
-          translateY: `${Math.random() * 200 - 100}px`,
-          translateX: `${Math.random() * 200 - 100}px`,
-
-          //   Leaves Effect
-          // translateY: `${Math.random() * 1000}px`,
-          //   translateX: `${Math.random() * 2500}px`,
-
+          translateY: `${Math.random() * 550}px`,
+          translateX: `${Math.random() * 550}px`,
           opacity: 0,
         },
-        { duration: 1250, promiseRejectEmpty: false }
+        { duration: 5500, promiseRejectEmpty: false }
       );
     },
   },
@@ -62,15 +57,28 @@ export default {
       left: 0,
       color: "red",
       size: 0,
-      colors: ["#00675b", "#00766c", "#82ada9"],
+      colors: ["purple"],
     };
   },
 };
 </script>
 
 <style lang="scss">
-.sparkles {
+.flurries {
   position: absolute;
-  pointer-events: none;
+}
+
+// .snow-container {
+//   position: relative;
+//   max-width: 50%;
+//   margin: auto;
+// }
+
+.snow-container > h2 {
+  z-index: 1;
+}
+
+.snow {
+  z-index: 0;
 }
 </style>

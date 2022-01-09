@@ -9,7 +9,6 @@
       v-for="sparkle in sparkleCount"
       :key="sparkle"
       :id="sparkle"
-      class="sparkle-comp"
     />
     <b-button
       type="button"
@@ -18,20 +17,10 @@
       target="_blank"
       variant="link"
     >
-      Donate
+      JavaScript
     </b-button>
     <div></div>
   </div>
-
-  <!-- <b-button
-        target="_blank"
-        type="button"
-        class="buttons btn btn-outline-primary"
-        :to="{ name: 'Wares' }"
-        variant="link"
-      >
-        View Our Wares
-      </b-button> -->
 </template>
 
 <script>
@@ -54,8 +43,8 @@ export default {
 }
 
 .btn {
-  color: #00675b;
-  border: #00675b solid 1px;
+  color: #3b5255;
+  border: #3b5255 solid 1px;
   border-radius: unset;
   padding: 15px;
   font-size: 20px;
@@ -63,9 +52,9 @@ export default {
 }
 
 .btn-outline-primary:hover {
-  border: #00766c solid 1px;
-  background-color: #ffffff !important;
-  color: #00766c;
+  border: #00675b solid 1px !important;
+  background-color: unset !important;
+  color: #00675b;
 }
 
 .sparkle-container {

@@ -81,7 +81,7 @@ export default {
 
 .footer-header {
   font-size: 30px;
-  color: #00675b;
+  color: #3b5255;
   letter-spacing: 2px;
   text-align: left;
   padding-top: 30px;
@@ -104,16 +104,16 @@ export default {
 }
 
 .footer {
-  background-color: #e0f2f1;
+  background-color: #e0e7f2;
 }
 
 a {
-  color: #00675b;
+  color: #3b5255;
 }
 
 a:hover {
-  color: #26a69a !important;
-  border-bottom: 1px solid #26a69a;
+  color: #3b5255a1 !important;
+  border-bottom: 1px solid;
   text-decoration: none;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <b-navbar class="potomac-nav text" sticky>
-    <b-navbar-brand :to="{ name: 'Home' }">
+    <b-navbar-brand class="navbar-logo" :to="{ name: 'Home' }">
       <b-img
         :src="require('@/assets/images/seashell_logo.png')"
         width="100"
@@ -33,29 +33,33 @@ export default {
 .potomac-nav {
   letter-spacing: 2px;
   font-size: 30px;
-  background-color: #e0f2f1;
+  background-color: #e0e7f2;
+}
+
+.navbar-logo {
+  border-bottom: unset !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #26a69a !important;
-  border-bottom: 1px solid #26a69a;
+  color: #3b5255a1 !important;
+  border-bottom: 1px solid #3b5255a1;
 }
 
 .navbar-light .navbar-nav .nav-link:active {
-  color: #26a69a !important;
-  border-bottom: 1px solid #26a69a;
+  color: #3b5255 !important;
+  border-bottom: 1px solid #3b5255;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #00675b;
+  color: #3b5255;
 }
 
 .b-nav-item {
-  color: #00766c !important;
+  color: #3b5255 !important;
 }
 
 .router-link-active {
-  color: #26a69a !important;
-  border-bottom: 1px solid #26a69a;
+  color: #3b5255 !important;
+  border-bottom: 1px solid #3b5255;
 }
 </style>
