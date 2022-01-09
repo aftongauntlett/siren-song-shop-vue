@@ -68,7 +68,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .sparkles {
   position: absolute;
   pointer-events: none;

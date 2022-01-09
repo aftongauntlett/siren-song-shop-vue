@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .main-button {
   text-decoration: unset !important;
   z-index: 999 !important;

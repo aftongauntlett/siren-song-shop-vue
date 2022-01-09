@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .snow-container {
   max-width: 50%;
   margin: auto;

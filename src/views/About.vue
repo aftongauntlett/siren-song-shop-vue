@@ -58,7 +58,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .section-1 {
   color: #00675bc9;
   font-size: 25px;

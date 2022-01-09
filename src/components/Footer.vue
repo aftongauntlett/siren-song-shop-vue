@@ -63,7 +63,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .image {
   padding-top: 30px;
 }

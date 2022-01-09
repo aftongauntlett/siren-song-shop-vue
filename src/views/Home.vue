@@ -13,6 +13,7 @@
         </b-container>
       </div>
     </div>
+    <Icons />
     <About />
   </div>
 </template>
@@ -20,10 +21,11 @@
 <script>
 import Sparkles from "@/components/Sparkles";
 import About from "./About";
+import Icons from "@/components/Icons";
 export default {
   mounted() {},
 
-  components: { Sparkles, About },
+  components: { Sparkles, About, Icons },
   data() {
     return {
       sparkleCount: 50,
@@ -33,7 +35,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .header-text {
   color: rgb(221, 230, 241);
   text-align: left;

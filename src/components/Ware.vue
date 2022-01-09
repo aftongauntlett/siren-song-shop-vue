@@ -53,7 +53,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .img {
   max-height: auto;
   width: auto;

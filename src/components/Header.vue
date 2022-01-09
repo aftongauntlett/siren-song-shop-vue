@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .header-text {
   color: rgb(221, 230, 241);
   text-align: left;
