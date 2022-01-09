@@ -1,5 +1,11 @@
 <template>
   <b-container class="snow-container" v-show="(showSnow = true)">
+    <div>
+      <div class="section-1 pt-5">This will be</div>
+      <div class="section-2-border">
+        <div class="section-2 pt-3">Magical JavaScript</div>
+      </div>
+    </div>
     <Snow v-show="showSnow" v-for="snow in snowCount" :key="snow" :id="snow" />
   </b-container>
 </template>
@@ -20,10 +26,7 @@ export default {
 
 <style>
 .snow-container {
-  /* position: relative; */
-  max-width: 100%;
-  max-height: 100%;
-  /* margin: auto; */
-  /* z-index: 999 !important; */
+  max-width: 50%;
+  margin: auto;
 }
 </style>

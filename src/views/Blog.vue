@@ -1,5 +1,12 @@
 <template>
-  <div class="blog">
-    <h1>This is an blog page</h1>
-  </div>
+  <Header />
 </template>
+
+<script>
+import Header from "../components/Header.vue";
+export default {
+  components: { Header },
+};
+</script>
+
+<style></style>
