@@ -63,18 +63,13 @@ export default {
 }
 
 .cost {
-  color: rgb(4, 43, 36);
-  font-weight: bold;
-  font-size: 40px;
-  letter-spacing: 2.5px;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://images.unsplash.com/photo-1583173451851-dd9ba01f891e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-image: url(https://images.unsplash.com/photo-1593570609432-49aae533e98d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
 }
 
 .rainbow-box {

@@ -1,16 +1,31 @@
 <template>
   <div class="about-section">
-    <Header />
+    <div>
+      <div
+        class="sparkle-container"
+        @mouseover="showSparkles = true"
+        @mouseout="showSparkles = false"
+      >
+        <Sparkles
+          v-show="showSparkles"
+          v-for="sparkle in sparkleCount"
+          :key="sparkle"
+          :id="sparkle"
+        />
+        <div>
+          <div class="section-1 pt-5">A little bit</div>
+          <div class="section-2-border">
+            <div class="section-2 pt-3">About Us</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section-3">
       <div class="home-text">
         Our little family run shop is inspired by the magic of nature and the
         beauty of her elements; sea and mountains, plants and stones, sky and
         cosmos, and all of the transcendental experiences that come from our
-        connection with her. We are further inspired by our favorite
-        one-stop-shop for all things magical and inspiring: Crystal Dragon in
-        Boulder, Colorado. We have brought home many a treasure from this
-        wondrous little place and want to be of service to the world in a
-        similar way.
+        connection with her.
       </div>
       <div class="home-text pt-4">
         Objects in the physical world can bring joy and be tools to raise our
@@ -43,18 +58,25 @@
         ></b-img>
       </div>
     </div>
-    <Button />
+    <Button text="Help Support Our Cause" link="/donate" />
   </div>
 </template>
 
 <script>
 import Button from "@/components/Button";
 import Header from "../components/Header.vue";
+import Sparkles from "../components/Sparkles.vue";
 
 export default {
   mounted() {},
 
-  components: { Button, Header },
+  components: { Button, Header, Sparkles },
+  data() {
+    return {
+      sparkleCount: 35,
+      showSparkles: false,
+    };
+  },
 };
 </script>
 
@@ -78,15 +100,11 @@ export default {
   padding-top: 60px;
   padding-bottom: 60px;
   color: #232b2b;
-  font-size: 18px;
-}
-
-.home-text {
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .about-section {
-  padding: 20px;
+  padding: 25px;
   max-width: 700px;
   margin: auto;
 }
@@ -96,5 +114,19 @@ export default {
   box-shadow: 1px 1px 20px 10px #3b52558a;
   width: 500px;
   opacity: 80%;
+}
+
+.sparkle {
+  z-index: 0;
+}
+
+.sparkle-container {
+  position: relative;
+  max-width: 50%;
+  margin: auto;
+}
+
+.sparkle-container > h2 {
+  z-index: 1;
 }
 </style>

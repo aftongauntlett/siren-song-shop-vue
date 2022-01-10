@@ -13,19 +13,21 @@
         </b-container>
       </div>
     </div>
-    <Icons />
+    <Icons class="pt-5" />
+
     <About />
   </div>
 </template>
 
 <script>
-import Sparkles from "@/components/Sparkles";
 import About from "./About";
 import Icons from "@/components/Icons";
+import Sparkles from "@/components/Sparkles";
+
 export default {
   mounted() {},
 
-  components: { Sparkles, About, Icons },
+  components: { About, Icons, Sparkles },
   data() {
     return {
       sparkleCount: 50,
@@ -62,19 +64,5 @@ export default {
   height: 100%;
   width: 100%;
   min-height: 90vh;
-}
-
-.sparkle-container {
-  position: relative;
-  max-width: 50%;
-  margin: auto;
-}
-
-.sparkle-container > h2 {
-  z-index: 1;
-}
-
-.sparkle {
-  z-index: 0;
 }
 </style>

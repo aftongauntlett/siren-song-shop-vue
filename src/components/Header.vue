@@ -10,12 +10,11 @@
         v-for="sparkle in sparkleCount"
         :key="sparkle"
         :id="sparkle"
-        class="sparkle-comp"
       />
       <div>
-        <div class="section-1 pt-5">This will be</div>
+        <div class="section-1 pt-5"></div>
         <div class="section-2-border">
-          <div class="section-2 pt-3">Magical JavaScript</div>
+          <div class="section-2 pt-3">{{ $route.name }}</div>
         </div>
       </div>
     </div>
@@ -62,5 +61,27 @@ export default {
 
 .sparkle-container > h2 {
   z-index: 1;
+}
+
+.section-1 {
+  color: #00675bc9;
+  font-size: 25px;
+}
+
+.section-2 {
+  color: #00675b;
+  font-size: 40px;
+}
+
+.section-2-border {
+  border-bottom: 5px solid #26a69949;
+  padding-bottom: 15px;
+}
+
+.section-3 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #232b2b;
+  font-size: 18px;
 }
 </style>

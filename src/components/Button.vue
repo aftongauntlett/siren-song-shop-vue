@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sparkle-container"
+    class="sparkle-container m-4 mx-auto"
     @mouseover="showSparkles = true"
     @mouseout="showSparkles = false"
   >
@@ -13,11 +13,11 @@
     <b-button
       type="button"
       class="main-button btn btn-outline-primary mb-5"
-      :to="{ name: 'Donate' }"
+      :to="link"
       target="_blank"
       variant="link"
     >
-      JavaScript
+      {{ text }}
     </b-button>
     <div></div>
   </div>
@@ -29,9 +29,17 @@ export default {
   components: { Sparkles },
   data() {
     return {
-      sparkleCount: 30,
+      sparkleCount: 15,
       showSparkles: false,
     };
+  },
+  props: {
+    text: {
+      default: "JavaScript",
+    },
+    link: {
+      default: "/",
+    },
   },
 };
 </script>
@@ -59,8 +67,6 @@ export default {
 
 .sparkle-container {
   position: relative;
-  max-width: 20%;
-  margin: auto;
   z-index: 999 !important;
 }
 </style>

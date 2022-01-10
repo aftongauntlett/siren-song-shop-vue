@@ -2,8 +2,8 @@
   <b-container>
     <div class="flex-container">
       <div class="flex-item p-5">
-        <b-icon icon="moon"></b-icon>
-        <div>ETHICALLY SOURCED</div>
+        <b-icon icon="moon" class="icon"></b-icon>
+        <div class="icon-title">ETHICALLY SOURCED</div>
         <div>
           Our goal is to be zero waste, and to source all of our wares
           ethically. All items are vegan/cruelty free, and fair trade when it’s
@@ -11,18 +11,18 @@
         </div>
       </div>
       <div class="flex-item p-5">
-        <b-icon icon="star"></b-icon>
+        <b-icon icon="star" class="icon"></b-icon>
 
-        <div>VEGAN/CRUELTY FREE</div>
+        <div class="icon-title">VEGAN/CRUELTY FREE</div>
         <div>
           We strive to live consciously and be principled in all of our actions.
           Every item we offer is chosen with care.
         </div>
       </div>
       <div class="flex-item p-5">
-        <b-icon icon="sun"></b-icon>
+        <b-icon icon="sun" class="icon"></b-icon>
 
-        <div>FAIR TRADE</div>
+        <div class="icon-title">FAIR TRADE</div>
         <div>
           We want to help uplift the collective by being a conduit of energy and
           inspiration, offering touchstones from earth and artist to humans on
@@ -51,5 +51,17 @@ export default {};
   font-size: 18px;
   text-align: center;
   max-width: 30%;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.icon-title {
+  font-size: 22px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  letter-spacing: 2px;
+  color: #00675bc9;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="potomac-nav text" sticky>
+  <b-navbar toggleable="lg" class="siren-nav text" sticky>
     <b-navbar-brand class="navbar-logo" :to="{ name: 'Home' }">
       <b-img
         :src="require('@/assets/images/seashell_logo.png')"
@@ -10,8 +10,8 @@
       ></b-img>
     </b-navbar-brand>
 
-    <b-navbar-toggle target="potomac-nav"></b-navbar-toggle>
-    <b-collapse id="potomac-nav" is-nav>
+    <b-navbar-toggle target="siren-nav"></b-navbar-toggle>
+    <b-collapse id="siren-nav" is-nav>
       <b-navbar-nav class="nav-border ml-auto">
         <b-nav-item class="pr-4" :to="{ name: 'About' }">About</b-nav-item>
         <b-nav-item class="pr-4" :to="{ name: 'Wares' }">Wares</b-nav-item>
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style scoped>
-.potomac-nav {
+.siren-nav {
   letter-spacing: 2px;
   font-size: 30px;
   background-color: #e0e7f2;
