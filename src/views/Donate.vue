@@ -37,7 +37,7 @@
 
       <div>
         <b-img
-          class="donate-image m-5"
+          class="donate-image my-5"
           :src="require('@/assets/images/sunflower.jpeg')"
           fluid
           alt=""
@@ -85,7 +85,7 @@
 
       <div>
         <b-img
-          class="donate-image m-5"
+          class="donate-image my-5"
           :src="require('@/assets/images/mountains.jpeg')"
           fluid
           alt=""
@@ -134,7 +134,7 @@
 
       <div>
         <b-img
-          class="donate-image m-5"
+          class="donate-image my-5"
           :src="require('@/assets/images/magical.jpg')"
           fluid
           alt=""
@@ -161,6 +161,15 @@
         cabins will then become a place for visitors, woofers, and air bnb
         guests (which will contribute to our financial stability and help us
         continue to invest in the land).
+      </div>
+
+      <div>
+        <b-img
+          class="donate-image my-5"
+          :src="require('@/assets/images/hammock-blanket.jpeg')"
+          fluid
+          alt=""
+        ></b-img>
       </div>
 
       <div class="donate">
@@ -194,8 +203,8 @@
 
       <div>
         <b-img
-          class="donate-image m-5"
-          :img-src="require('@/assets/images/woman-holding-stone.jpeg')"
+          class="donate-image my-5"
+          :src="require('@/assets/images/woman-mountains.jpeg')"
           fluid
           alt=""
         ></b-img>
@@ -209,13 +218,27 @@
       </div>
 
       <div class="donate">
-        Necessities we still need for our initial shelter: ($10,000 total) The
-        cost of transporting the cabins to our property ($3,500) Batteries
-        ($2000) and inverter ($900) for our solar panels Washer/ dryer combo
-        ($1000) Composting toilets ($150) Hot water heaters ($300) Refrigerator
-        ($300) Generator (For days that there isn’t enough sun to charge the
-        batteries) ($500) Estimated $1,000 for closing costs and other expenses
-        relating to our initial setup (such as a woodstove, water pump, etc)
+        <strong
+          >Necessities we still need for our initial shelter: ($10,000
+          total)</strong
+        >
+        <ul class="pt-3 order-list">
+          <li>cost of transporting the cabins to our property ($3,500)</li>
+          <li>Batteries ($2000)</li>
+          <li>and inverter for our solar panels($900)</li>
+          <li>Washer/ dryer combo ($1000)</li>
+          <li>Composting toilets ($150)</li>
+          <li>Hot water heaters ($300)</li>
+          <li>Refrigerator ($300)</li>
+          <li>
+            Generator (For days that there isn’t enough sun to charge the
+            batteries) ($500)
+          </li>
+          <li>
+            Estimated $1,000 for closing costs and other expenses relating to
+            our initial setup (such as a woodstove, water pump, etc)
+          </li>
+        </ul>
       </div>
 
       <div class="donate">
@@ -235,12 +258,16 @@
         gratitude we say thank you!!!
       </div>
     </div>
-    <Button text="Donate through Venmo" link="https://venmo.com/u/CallySmith" />
+    <Button
+      class="pt-3"
+      text="Donate through Venmo"
+      link="https://venmo.com/u/CallySmith"
+    />
     <Button
       text="Donate through PayPal"
       link="https://www.paypal.me/sirensongshop"
     />
-    <Carousel />
+    <Carousel class="pt-4" />
   </b-container>
 </template>
 
@@ -260,6 +287,10 @@ export default {
   padding-bottom: 23px;
   max-width: 70%;
   margin: auto;
+  text-align: center;
+}
+
+.order-list {
   text-align: left;
 }
 
@@ -270,6 +301,7 @@ export default {
 }
 
 .donate-image {
+  margin-top: 5vh;
   box-shadow: 1px 1px 20px 10px #3b52558a;
   width: 500px;
 }

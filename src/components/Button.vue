@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sparkle-container m-4 mx-auto"
+    class="sparkle-container m-3 mx-auto"
     @mouseover="showSparkles = true"
     @mouseout="showSparkles = false"
   >
@@ -12,7 +12,7 @@
     />
     <b-button
       type="button"
-      class="main-button btn btn-outline-primary mb-5"
+      class="main-button btn btn-outline-primary px-4 m-4"
       :to="link"
       target="_blank"
       variant="link"
@@ -35,7 +35,7 @@ export default {
   },
   props: {
     text: {
-      default: "JavaScript",
+      default: "",
     },
     link: {
       default: "/",

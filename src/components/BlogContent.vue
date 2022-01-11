@@ -12,7 +12,7 @@
 
     <div class="description p-3 mt-auto" v-html="item.credit"></div>
 
-    <Button />
+    <Button text="Read More" link="" />
   </li>
 </template>
 

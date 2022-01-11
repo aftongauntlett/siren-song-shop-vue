@@ -21,7 +21,10 @@
       <div>
         <div class="contact">
           <h2 class="footer-header pb-3">Contact</h2>
-          <b-link class="email-link">livefreewithme@protonmail.com</b-link>
+
+          <a class="email-link" href="mailto:livefreewithme@protonmail.com"
+            >Email Us</a
+          >
         </div>
       </div>
     </div>
@@ -80,10 +83,10 @@ export default {
 }
 
 .footer-header {
-  font-size: 30px;
+  font-size: 22px;
   color: #3b5255;
   letter-spacing: 2px;
-  text-align: left;
+  text-align: center;
   padding-top: 30px;
   font-weight: 600;
 }
@@ -100,7 +103,7 @@ export default {
   text-align: left;
   padding-bottom: 15px;
   letter-spacing: 2.5px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .footer {

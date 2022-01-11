@@ -15,7 +15,7 @@
     <div class="cost mt-auto">
       {{ item.cost }}
     </div>
-    <Button />
+    <Button text="Purchase" link="" />
   </li>
 </template>
 
