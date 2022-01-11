@@ -65,7 +65,7 @@ export default {
 
 .section-1 {
   color: #00675bc9;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .section-2 {

@@ -10,18 +10,18 @@
           an option
         </div>
       </div>
+
       <div class="flex-item p-5">
         <b-icon icon="star" class="icon"></b-icon>
-
         <div class="icon-title">VEGAN/CRUELTY FREE</div>
         <div>
           We strive to live consciously and be principled in all of our actions.
           Every item we offer is chosen with care.
         </div>
       </div>
+
       <div class="flex-item p-5">
         <b-icon icon="sun" class="icon"></b-icon>
-
         <div class="icon-title">FAIR TRADE</div>
         <div>
           We want to help uplift the collective by being a conduit of energy and
@@ -51,6 +51,7 @@ export default {};
   font-size: 18px;
   text-align: center;
   max-width: 30%;
+  min-width: 350px;
 }
 
 .icon {

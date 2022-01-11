@@ -2,31 +2,27 @@
   <b-container>
     <Header />
     <div>
-      <div class="donate-header pt-5">
-        Dear beautiful friends, Thank you so much for your time!
+      <div class="donate-header pt-5 pb-5">
+        Dear Beautiful Friends, <br />
+        Thank you so much for your time!
       </div>
       <div class="donate">
-        This is our
-        <strong>big ask</strong> to the universe, to the community, to anyone
-        with whom this message resonates.
+        This is our big ask to the universe, to the community, to anyone with
+        whom this message resonates.
       </div>
 
       <div class="donate">
         Have you ever wanted to just leave it all behind and go live in the
         woods? Us too!! We have been talking, dreaming, researching, planning,
-        and <strong>preparing for years to go off grid.</strong> Our goal is to
-        <strong>acquire land</strong> to <strong>create a sanctuary</strong> for
-        ourselves and others. We will plant
-        <strong>permaculture gardens</strong> and a
-        <strong>food forest, rescue animals,</strong> practice different styles
-        of <strong>natural building,</strong> create <strong>art</strong> and
-        build <strong>intentional community.</strong>
+        and preparing for years to go off grid. Our goal is to acquire land to
+        create a sanctuary for ourselves and others. We will plant permaculture
+        gardens and a food forest, rescue animals, practice different styles of
+        natural building, create art and build intentional community.
       </div>
 
       <div class="donate">
-        <strong>Who we are:</strong> A family consisting of partners
-        <strong>Cally and Warren,</strong> our <strong>teenage son,</strong> and
-        <strong>Aunt Kathy.</strong> Our non-human animal family members are:
+        Who we are: A family consisting of partners Cally and Warren, our
+        teenage son, and Aunt Kathy. Our non-human animal family members are:
         dogs Espen and Molly; cats Leo and Gertrude; bunnies Willow, Rain, and
         Chewy; chinchilla, Mage, fish Gilligan, Professor, and Skipper, as well
         as quite a few plant friends!
@@ -37,6 +33,15 @@
         wizards, witches and pioneers. We each have our own unique backgrounds
         and skills which provide us a cornucopia of tools for off grid
         sustainability.
+      </div>
+
+      <div>
+        <b-img
+          class="donate-image m-5"
+          :img-src="require('@/assets/images/sunflower.jpeg')"
+          fluid
+          alt="Cally with rainbow reflections across her face"
+        ></b-img>
       </div>
 
       <div class="donate">
@@ -78,6 +83,15 @@
         that comes along with living the rat race.
       </div>
 
+      <div>
+        <b-img
+          class="donate-image m-5"
+          :img-src="require('@/assets/images/mermaid-underwater.jpg')"
+          fluid
+          alt="Cally with rainbow reflections across her face"
+        ></b-img>
+      </div>
+
       <div class="donate">
         We can then begin to build our grand vision of cultivating a sanctuary
         for all; we envision a dynamic property which will serve and bless all
@@ -116,6 +130,15 @@
         knowledge and ideas, socializing and celebrating all occasions!! We have
         plans for a community library, an outdoor community kitchen, and shared
         art/creation space.
+      </div>
+
+      <div>
+        <b-img
+          class="donate-image m-5"
+          :img-src="require('@/assets/images/magical.jpg')"
+          fluid
+          alt="Cally with rainbow reflections across her face"
+        ></b-img>
       </div>
 
       <div class="donate">
@@ -169,6 +192,15 @@
         how long it takes.
       </div>
 
+      <div>
+        <b-img
+          class="donate-image m-5"
+          :img-src="require('@/assets/images/woman-holding-stone.jpeg')"
+          fluid
+          alt="Cally with rainbow reflections across her face"
+        ></b-img>
+      </div>
+
       <div class="donate">
         What your donations will help pay for: The most important asset, LAND
         (The most promising property we have found so far is $55,000 for over 16
@@ -203,7 +235,11 @@
         gratitude we say thank you!!!
       </div>
     </div>
-    <Button />
+    <Button text="Donate through Venmo" link="https://venmo.com/u/CallySmith" />
+    <Button
+      text="Donate through PayPal"
+      link="https://www.paypal.me/sirensongshop"
+    />
     <Carousel />
   </b-container>
 </template>
@@ -220,8 +256,8 @@ export default {
 
 <style scoped>
 .donate {
-  font-size: 25px;
-  padding-bottom: 25px;
+  font-size: 23px;
+  padding-bottom: 23px;
   max-width: 70%;
   margin: auto;
   text-align: left;
@@ -229,5 +265,13 @@ export default {
 
 .donate-header {
   text-align: center;
+  font-size: 30px;
+  color: #29a397e5;
+}
+
+.donate-image {
+  box-shadow: 1px 1px 20px 10px #3b52558a;
+  width: 500px;
+  opacity: 80%;
 }
 </style>

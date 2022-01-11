@@ -43,16 +43,16 @@
       <div>
         <b-img
           class="about-image"
-          :src="require('@/assets/images/cally-and-gerek.jpg')"
+          :img-src="require('@/assets/images/cally-and-gerek.jpg')"
           fluid
-          alt="Owners Cally and Gerek smiling"
+          alt="Cally and her son Gerek smiling"
         ></b-img>
       </div>
 
       <div>
         <b-img
           class="about-image"
-          :src="require('@/assets/images/cally.jpg')"
+          :img-src="require('@/assets/images/cally.jpg')"
           fluid
           alt="Cally with rainbow reflections across her face"
         ></b-img>
@@ -83,7 +83,7 @@ export default {
 <style scoped>
 .section-1 {
   color: #00675bc9;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .section-2 {
@@ -100,11 +100,11 @@ export default {
   padding-top: 60px;
   padding-bottom: 60px;
   color: #232b2b;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .about-section {
-  padding: 25px;
+  padding: 23px;
   max-width: 700px;
   margin: auto;
 }

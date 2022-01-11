@@ -14,24 +14,28 @@
       @sliding-end="onSlideEnd"
     >
       <b-carousel-slide
-        :src="require('@/assets/images/seashell_logo.png')"
+        :img-src="require('@/assets/images/magical-book.jpg')"
+        alt="Alt Text Here"
       ></b-carousel-slide>
 
       <b-carousel-slide
-        :src="require('@/assets/images/seashell_logo.png')"
+        :img-src="require('@/assets/images/magical-book.jpg')"
+        alt="Alt Text Here"
       ></b-carousel-slide>
 
       <b-carousel-slide
-        :src="require('@/assets/images/seashell_logo.png')"
+        :img-src="require('@/assets/images/magical-book.jpg')"
+        alt="Alt Text Here"
       ></b-carousel-slide>
 
       <b-carousel-slide
-        :src="require('@/assets/images/seashell_logo.png')"
-        alt="Cally with rainbow reflections across her face"
+        :img-src="require('@/assets/images/magical-book.jpg')"
+        alt="Alt Text Here"
       ></b-carousel-slide>
 
       <b-carousel-slide
-        :src="require('@/assets/images/seashell_logo.png')"
+        :img-src="require('@/assets/images/magical-book.jpg')"
+        alt="Alt Text Here"
       ></b-carousel-slide>
     </b-carousel>
   </div>

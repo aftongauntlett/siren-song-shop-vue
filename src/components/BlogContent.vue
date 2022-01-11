@@ -10,11 +10,8 @@
       {{ item.description }}
     </div>
 
-    <div class="description p-3" v-html="item.credit"></div>
+    <div class="description p-3 mt-auto" v-html="item.credit"></div>
 
-    <div class="cost mt-auto">
-      {{ item.cost }}
-    </div>
     <Button />
   </li>
 </template>
@@ -45,7 +42,7 @@ export default {
 .name {
   color: rgb(25, 24, 26);
   font-weight: bold;
-  font-size: 25px;
+  font-size: 23px;
   text-align: left;
 }
 
@@ -60,16 +57,6 @@ export default {
   text-align: center;
   color: rgb(25, 24, 26);
   font-size: 18px;
-}
-
-.cost {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(https://images.unsplash.com/photo-1593570609432-49aae533e98d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
 }
 
 .rainbow-box {

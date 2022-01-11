@@ -53,10 +53,10 @@ export default {
           name: "Donate",
           display: "Donate",
         },
-        {
-          name: "Contact",
-          display: "Contact",
-        },
+        // {
+        //   name: "Contact",
+        //   display: "Contact",
+        // },
       ],
     };
   },

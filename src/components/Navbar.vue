@@ -17,7 +17,7 @@
         <b-nav-item class="pr-4" :to="{ name: 'Wares' }">Wares</b-nav-item>
         <b-nav-item class="pr-4" :to="{ name: 'Blog' }">Blog</b-nav-item>
         <b-nav-item class="pr-4" :to="{ name: 'Donate' }">Donate</b-nav-item>
-        <b-nav-item class="pr-4" :to="{ name: 'Contact' }">Contact</b-nav-item>
+        <!-- <b-nav-item class="pr-4" :to="{ name: 'Contact' }">Contact</b-nav-item> -->
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>

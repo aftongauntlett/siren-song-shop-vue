@@ -4,7 +4,7 @@
     <div class="pt-5">
       <ul class="flex-container">
         <BlogContent
-          class="flex-item mb-5"
+          class="flex-item mb-5 mx-4"
           v-for="item in items"
           :key="item.name"
           :item="item"
@@ -55,7 +55,8 @@ export default {
         {
           image: "magical-book.jpg",
           name: "Blog Example Title",
-          description: "A bowl of magic.",
+          description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?",
         },
         {
           image: "magical-book.jpg",
@@ -79,14 +80,15 @@ export default {
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 25px;
   list-style: none;
 }
 
 .flex-item {
   background: unset;
-  width: 500px;
+  min-width: 350px;
+  max-width: 475px;
   margin-top: 10px;
   box-shadow: 1px 1px 20px 10px #3b525557;
 }
