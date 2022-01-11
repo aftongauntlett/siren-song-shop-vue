@@ -38,9 +38,9 @@
       <div>
         <b-img
           class="donate-image m-5"
-          :img-src="require('@/assets/images/sunflower.jpeg')"
+          :src="require('@/assets/images/sunflower.jpeg')"
           fluid
-          alt="Cally with rainbow reflections across her face"
+          alt=""
         ></b-img>
       </div>
 
@@ -86,9 +86,9 @@
       <div>
         <b-img
           class="donate-image m-5"
-          :img-src="require('@/assets/images/mermaid-underwater.jpg')"
+          :src="require('@/assets/images/mountains.jpeg')"
           fluid
-          alt="Cally with rainbow reflections across her face"
+          alt=""
         ></b-img>
       </div>
 
@@ -135,9 +135,9 @@
       <div>
         <b-img
           class="donate-image m-5"
-          :img-src="require('@/assets/images/magical.jpg')"
+          :src="require('@/assets/images/magical.jpg')"
           fluid
-          alt="Cally with rainbow reflections across her face"
+          alt=""
         ></b-img>
       </div>
 
@@ -197,7 +197,7 @@
           class="donate-image m-5"
           :img-src="require('@/assets/images/woman-holding-stone.jpeg')"
           fluid
-          alt="Cally with rainbow reflections across her face"
+          alt=""
         ></b-img>
       </div>
 
@@ -272,6 +272,5 @@ export default {
 .donate-image {
   box-shadow: 1px 1px 20px 10px #3b52558a;
   width: 500px;
-  opacity: 80%;
 }
 </style>

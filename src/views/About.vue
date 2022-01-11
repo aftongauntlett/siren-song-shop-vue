@@ -43,18 +43,18 @@
       <div>
         <b-img
           class="about-image"
-          :img-src="require('@/assets/images/cally-and-gerek.jpg')"
+          :src="require('@/assets/images/girl-necklace.jpeg')"
           fluid
-          alt="Cally and her son Gerek smiling"
+          alt=""
         ></b-img>
       </div>
 
       <div>
         <b-img
           class="about-image"
-          :img-src="require('@/assets/images/cally.jpg')"
+          :src="require('@/assets/images/mermaid-underwater.jpg')"
           fluid
-          alt="Cally with rainbow reflections across her face"
+          alt=""
         ></b-img>
       </div>
     </div>
@@ -113,7 +113,6 @@ export default {
   margin-top: 5vh;
   box-shadow: 1px 1px 20px 10px #3b52558a;
   width: 500px;
-  opacity: 80%;
 }
 
 .sparkle {

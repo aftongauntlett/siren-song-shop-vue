@@ -21,7 +21,7 @@
       <div>
         <div class="contact">
           <h2 class="footer-header pb-3">Contact</h2>
-          <b-link class="email-link">cally@sirensongshop.com</b-link>
+          <b-link class="email-link">livefreewithme@protonmail.com</b-link>
         </div>
       </div>
     </div>
