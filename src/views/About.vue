@@ -21,19 +21,19 @@
       </div>
     </div>
     <div class="section-3">
-      <div class="home-text">
+      <div>
         Our little family run shop is inspired by the magic of nature and the
         beauty of her elements; sea and mountains, plants and stones, sky and
         cosmos, and all of the transcendental experiences that come from our
         connection with her.
       </div>
-      <div class="home-text pt-4">
+      <div class="pt-4">
         Objects in the physical world can bring joy and be tools to raise our
         frequency and connect us to a higher plane. We want to help uplift the
         collective by being a conduit of energy and inspiration, offering
         touchstones from earth and artist to humans on their journey.
       </div>
-      <div class="home-text pt-4">
+      <div class="pt-4">
         We strive to live consciously and be principled in all of our actions.
         Every item we offer is chosen with care. Our goal is to be zero waste,
         and to source all of our wares ethically. All items are vegan/cruelty
@@ -59,6 +59,12 @@
       </div>
     </div>
     <Button text="Help Support Our Cause" link="/donate" />
+    <div class="pb-5 pt-5">
+      <div class="quote">
+        “When the soul is in heaven the Sirens seek, by harmonic motion, to
+        unite it to the divine life of the celestial host”
+      </div>
+    </div>
   </div>
 </template>
 
@@ -101,6 +107,16 @@ export default {
   padding-bottom: 60px;
   color: #232b2b;
   font-size: 23px;
+}
+
+.quote {
+  border-top: 2px solid #bed8d5;
+  border-bottom: 2px solid #bed8d5;
+  font-size: 30px;
+  font-style: italic;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #87afaa;
 }
 
 .about-section {

@@ -47,7 +47,6 @@ export default {};
 
 .flex-item {
   color: rgba(12, 37, 63, 0.58);
-  font-weight: bold;
   font-size: 18px;
   text-align: center;
   max-width: 30%;
@@ -56,13 +55,15 @@ export default {};
 
 .icon {
   font-size: 40px;
+  color: #00675bc9;
 }
 
 .icon-title {
   font-size: 22px;
   padding-bottom: 15px;
   padding-top: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   color: #00675bc9;
+  font-weight: 600;
 }
 </style>

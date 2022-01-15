@@ -55,7 +55,7 @@ export default {
   border: #3b5255 solid 1px;
   border-radius: unset;
   padding: 15px;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 2.5px;
 }
 

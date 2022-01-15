@@ -15,16 +15,11 @@
     <div class="cost mt-auto">
       {{ item.cost }}
     </div>
-    <Button text="Purchase" link="" />
   </li>
 </template>
 
 <script>
-import Button from "../components/Button.vue";
-
 export default {
-  components: { Button },
-
   props: ["item"],
   computed: {
     imageLocation() {
@@ -63,18 +58,13 @@ export default {
 }
 
 .cost {
-  color: rgb(4, 43, 36);
+  color: rgb(51, 159, 167);
   font-weight: bold;
   font-size: 40px;
   letter-spacing: 2.5px;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(https://images.unsplash.com/photo-1583173451851-dd9ba01f891e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
 }
 
 .rainbow-box {

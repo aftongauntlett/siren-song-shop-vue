@@ -2,6 +2,9 @@
   <b-container>
     <Header />
     <div class="pt-5">
+      <div class="blog-section pb-5">
+        Our Blog is being built at the moment, please check back soon!
+      </div>
       <ul class="flex-container">
         <BlogContent
           class="flex-item mb-5 mx-4"
@@ -46,30 +49,6 @@ export default {
           description:
             " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?",
         },
-        {
-          image: "magical-book.jpg",
-          name: "Blog Example Title",
-          description:
-            " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?",
-        },
-        {
-          image: "magical-book.jpg",
-          name: "Blog Example Title",
-          description:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?",
-        },
-        {
-          image: "magical-book.jpg",
-          name: "Blog Example Title",
-          description:
-            " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?",
-        },
-        {
-          image: "magical-book.jpg",
-          name: "Blog Example Title",
-          description:
-            " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minus autem provident, ut nisi vitae qui, cupiditate aliquam fuga eius iste quo beatae illum dicta sequi vel deserunt. Sit, doloremque?",
-        },
       ],
     };
   },
@@ -83,6 +62,15 @@ export default {
   justify-content: center;
   padding: 25px;
   list-style: none;
+}
+
+.blog-section {
+  padding-left: 23px;
+  padding-right: 23px;
+  max-width: 700px;
+  margin: auto;
+  color: #232b2b;
+  font-size: 23px;
 }
 
 .flex-item {

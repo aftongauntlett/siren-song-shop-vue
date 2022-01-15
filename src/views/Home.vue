@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      :style="`background-image: url(/images/mermaid-blue.jpg)`"
+      :style="`background-image: url(/images/swimming.jpg)`"
       class="main-image"
     >
       <div class="background-image-cover">
@@ -13,7 +13,10 @@
         </b-container>
       </div>
     </div>
-    <Icons class="pt-5" />
+    <Icons class="pt-5 pb-5" />
+    <div class="home-wares">
+      <HomeWares />
+    </div>
 
     <About />
   </div>
@@ -22,12 +25,13 @@
 <script>
 import About from "./About";
 import Icons from "@/components/Icons";
+import HomeWares from "@/components/HomeWares";
 import Sparkles from "@/components/Sparkles";
 
 export default {
   mounted() {},
 
-  components: { About, Icons, Sparkles },
+  components: { About, Icons, Sparkles, HomeWares },
   data() {
     return {
       sparkleCount: 50,
@@ -38,15 +42,19 @@ export default {
 </script>
 
 <style scoped>
+.home-wares {
+  background-color: rgb(210, 230, 238);
+}
 .header-text {
-  color: rgb(221, 230, 241);
+  color: rgb(238, 244, 245);
   text-align: left;
-  font-size: 3vh;
+  font-size: 2vw;
   margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.123);
 }
 
 .header-text h2 {
-  font-size: 12vh;
+  font-size: 8vw;
   font-family: "Tangerine", cursive;
   letter-spacing: 3px;
 }
@@ -60,7 +68,7 @@ export default {
 }
 
 .background-image-cover {
-  background-color: rgba(12, 37, 63, 0.58);
+  background-color: rgba(235, 239, 243, 0.247);
   height: 100%;
   width: 100%;
   min-height: 90vh;

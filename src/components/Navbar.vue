@@ -13,11 +13,10 @@
     <b-navbar-toggle target="siren-nav"></b-navbar-toggle>
     <b-collapse id="siren-nav" is-nav>
       <b-navbar-nav class="nav-border ml-auto">
-        <b-nav-item class="pr-4" :to="{ name: 'About' }">About</b-nav-item>
-        <b-nav-item class="pr-4" :to="{ name: 'Wares' }">Wares</b-nav-item>
-        <b-nav-item class="pr-4" :to="{ name: 'Blog' }">Blog</b-nav-item>
-        <b-nav-item class="pr-4" :to="{ name: 'Donate' }">Donate</b-nav-item>
-        <!-- <b-nav-item class="pr-4" :to="{ name: 'Contact' }">Contact</b-nav-item> -->
+        <b-nav-item class="pr-5" :to="{ name: 'About' }">About</b-nav-item>
+        <b-nav-item class="pr-5" :to="{ name: 'Wares' }">Wares</b-nav-item>
+        <b-nav-item class="pr-5" :to="{ name: 'Blog' }">Blog</b-nav-item>
+        <b-nav-item class="pr-5" :to="{ name: 'Donate' }">Donate</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -41,25 +40,16 @@ export default {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #3b5255a1 !important;
-  border-bottom: 1px solid #3b5255a1;
-}
-
-.navbar-light .navbar-nav .nav-link:active {
-  color: #3b5255 !important;
-  border-bottom: 1px solid #3b5255;
+  color: rgb(45, 99, 90) !important;
+  border-bottom: 1px solid rgb(45, 99, 90);
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #3b5255;
-}
-
-.b-nav-item {
-  color: #3b5255 !important;
+  color: rgb(19, 179, 152);
 }
 
 .router-link-active {
-  color: #3b5255 !important;
-  border-bottom: 1px solid #3b5255;
+  color: rgb(45, 99, 90) !important;
+  border-bottom: 1px solid rgb(45, 99, 90);
 }
 </style>

@@ -1,34 +1,24 @@
 <template>
   <b-container fluid class="footer border-top">
-    <div class="d-flex flex-wrap justify-content-around">
-      <div></div>
-      <div>
-        <h2 class="footer-header pb-3">Company</h2>
-        <div class="links" v-for="link in links" :key="link.name">
-          <b-link :to="{ name: link.name }"> {{ link.display }}</b-link>
-        </div>
-      </div>
-      <div>
+    <div class="d-flex justify-content-center">
+      <b-link href="/">
         <b-img
           :src="require('@/assets/images/seashell_logo.png')"
-          width="200"
+          width="100"
           fluid
           alt="stack of books"
-          class="image"
+          class="footer-logo"
         >
         </b-img>
-      </div>
-      <div>
-        <div class="contact">
-          <h2 class="footer-header pb-3">Contact</h2>
+      </b-link>
+    </div>
 
-          <a class="email-link" href="mailto:livefreewithme@protonmail.com"
-            >Email Us</a
-          >
-        </div>
+    <div class="pt-5 footer-links">
+      <div class="pr-5 links" v-for="link in links" :key="link.name">
+        <b-link :to="{ name: link.name }"> {{ link.display }}</b-link>
       </div>
     </div>
-    <div></div>
+
     <div class="copyright">
       © Copyright 2022 - Siren Song Shop - All Rights Reserved
     </div>
@@ -56,10 +46,6 @@ export default {
           name: "Donate",
           display: "Donate",
         },
-        // {
-        //   name: "Contact",
-        //   display: "Contact",
-        // },
       ],
     };
   },
@@ -67,8 +53,15 @@ export default {
 </script>
 
 <style scoped>
-.image {
+.footer-links {
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-around; */
+}
+.footer-logo {
   padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: unset !important;
 }
 
 .copyright {
@@ -77,18 +70,8 @@ export default {
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 30px;
   font-family: "Tangerine", cursive;
-}
-
-.footer-header {
-  font-size: 22px;
-  color: #3b5255;
-  letter-spacing: 2px;
-  text-align: center;
-  padding-top: 30px;
-  font-weight: 600;
 }
 
 .links {
@@ -96,14 +79,7 @@ export default {
   padding-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-size: 22px;
-}
-
-.email-link {
-  text-align: left;
-  padding-bottom: 15px;
-  letter-spacing: 2.5px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .footer {
@@ -111,12 +87,12 @@ export default {
 }
 
 a {
-  color: #3b5255;
+  color: rgb(19, 179, 152);
 }
 
 a:hover {
-  color: #3b5255a1 !important;
-  border-bottom: 1px solid;
+  color: rgb(45, 99, 90) !important;
+  border-bottom: 1px solid rgb(45, 99, 90);
   text-decoration: none;
 }
 </style>

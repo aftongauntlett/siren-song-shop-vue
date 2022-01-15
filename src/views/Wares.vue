@@ -2,6 +2,40 @@
   <b-container>
     <Header />
     <div class="pt-5">
+      <div class="blurb-section pb-5">
+        We strive to live consciously and be divrincipled in all of our actions.
+        Every item we offer is chosen with care. Our goal is to be zero waste,
+        and to source all of our wares ethically. All items are vegan/cruelty
+        free, and fair trade when it’s an option.
+      </div>
+      <div class="blurb-section">
+        Send us an email using the button below if you are interested in
+        purchasing an item. Please mention the item you are interested in and we
+        will be in touch about availability!
+      </div>
+
+      <div
+        class="sparkle-container m-3 mx-auto"
+        @mouseover="showSparkles = true"
+        @mouseout="showSparkles = false"
+      >
+        <Sparkles
+          v-show="showSparkles"
+          v-for="sparkle in sparkleCount"
+          :key="sparkle"
+          :id="sparkle"
+        />
+        <b-button
+          type="button"
+          class="main-button btn btn-outline-primary px-4 m-4"
+          href="mailto:livefreewithme@protonmail.com"
+          variant="link"
+        >
+          Email Us
+        </b-button>
+        <div></div>
+      </div>
+
       <ul class="flex-container">
         <Ware
           class="flex-item mb-5 mx-4"
@@ -17,10 +51,13 @@
 <script>
 import Header from "../components/Header.vue";
 import Ware from "../components/Ware.vue";
+import Sparkles from "../components/Sparkles.vue";
 export default {
-  components: { Ware, Header },
+  components: { Ware, Header, Sparkles },
   data() {
     return {
+      sparkleCount: 15,
+      showSparkles: false,
       items: [
         {
           image: "crystals.jpeg",
@@ -116,6 +153,31 @@ export default {
 </script>
 
 <style scoped>
+.main-button {
+  text-decoration: unset !important;
+  z-index: 999 !important;
+}
+
+.btn {
+  color: #3b5255;
+  border: #3b5255 solid 1px;
+  border-radius: unset;
+  padding: 15px;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+}
+
+.btn-outline-primary:hover {
+  border: #00675b solid 1px !important;
+  background-color: unset !important;
+  color: #00675b;
+}
+
+.sparkle-container {
+  position: relative;
+  z-index: 999 !important;
+}
+
 .flex-container {
   display: flex;
   flex-flow: row wrap;
@@ -136,5 +198,14 @@ export default {
   padding: 20px;
   max-width: 700px;
   margin: auto;
+}
+
+.blurb-section {
+  padding-left: 23px;
+  padding-right: 23px;
+  max-width: 700px;
+  margin: auto;
+  color: #232b2b;
+  font-size: 23px;
 }
 </style>
