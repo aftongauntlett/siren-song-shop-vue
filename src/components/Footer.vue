@@ -1,13 +1,13 @@
 <template>
   <b-container fluid class="footer border-top">
     <div class="d-flex justify-content-center">
-      <b-link href="/">
+      <b-link class="footer-logo" href="/">
         <b-img
           :src="require('@/assets/images/seashell_logo.png')"
           width="100"
           fluid
           alt="stack of books"
-          class="footer-logo"
+          class="footer-image"
         >
         </b-img>
       </b-link>
@@ -56,11 +56,15 @@ export default {
 .footer-links {
   display: flex;
   justify-content: center;
-  /* justify-content: space-around; */
 }
-.footer-logo {
+
+.footer-image {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.footer-logo:hover {
+  padding-bottom: 0px;
   border-bottom: unset !important;
 }
 
@@ -72,6 +76,7 @@ export default {
   justify-content: center;
   font-size: 30px;
   font-family: "Tangerine", cursive;
+  color: rgb(161, 201, 201) !important;
 }
 
 .links {
@@ -83,16 +88,17 @@ export default {
 }
 
 .footer {
-  background-color: #e0e7f2;
+  background-color: #2f3a3a;
 }
 
 a {
-  color: rgb(19, 179, 152);
+  color: rgb(21, 192, 164);
 }
 
 a:hover {
-  color: rgb(45, 99, 90) !important;
-  border-bottom: 1px solid rgb(45, 99, 90);
+  color: rgb(161, 201, 201) !important;
+  border-bottom: 2px solid rgb(21, 192, 164);
+  padding-bottom: 10px;
   text-decoration: none;
 }
 </style>

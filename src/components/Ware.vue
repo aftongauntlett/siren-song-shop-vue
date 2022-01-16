@@ -15,6 +15,10 @@
     <div class="cost mt-auto">
       {{ item.cost }}
     </div>
+    <div class="price-text">
+      <a href="mailto:livefreewithme@protonmail.com">Contact Us</a> for
+      availability and purchase.
+    </div>
   </li>
 </template>
 
@@ -65,6 +69,12 @@ export default {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.price-text {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 20px;
 }
 
 .rainbow-box {

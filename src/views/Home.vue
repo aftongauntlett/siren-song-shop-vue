@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      :style="`background-image: url(/images/swimming.jpg)`"
+      :style="`background-image: url(/images/mermaid-sleep.webp)`"
       class="main-image"
     >
       <div class="background-image-cover">

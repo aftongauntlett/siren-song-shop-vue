@@ -31,25 +31,27 @@ export default {
 <style scoped>
 .siren-nav {
   letter-spacing: 2px;
-  font-size: 30px;
-  background-color: #e0e7f2;
+  font-size: 27px;
+  background-color: #2f3a3a;
+  text-transform: uppercase;
 }
 
 .navbar-logo {
-  border-bottom: unset !important;
+  border-top: unset !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: rgb(45, 99, 90) !important;
-  border-bottom: 1px solid rgb(45, 99, 90);
+  border-top: 2px solid rgb(21, 192, 164);
+  color: rgb(161, 201, 201) !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgb(19, 179, 152);
+  border-top: 2px solid rgba(21, 192, 164, 0);
+  color: rgb(21, 192, 164);
 }
 
 .router-link-active {
-  color: rgb(45, 99, 90) !important;
-  border-bottom: 1px solid rgb(45, 99, 90);
+  border-top: 2px solid rgb(21, 192, 164);
+  color: rgb(161, 201, 201) !important;
 }
 </style>
