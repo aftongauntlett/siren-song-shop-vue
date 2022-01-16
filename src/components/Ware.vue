@@ -28,7 +28,7 @@ export default {
   computed: {
     imageLocation() {
       return this.item.image
-        ? require(`../assets/images/${this.item.image}`)
+        ? require(`../assets/wares/${this.item.image}`)
         : "";
     },
   },

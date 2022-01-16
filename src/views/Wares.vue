@@ -60,7 +60,7 @@ export default {
       showSparkles: false,
       items: [
         {
-          image: "crystals.jpeg",
+          image: "spiritcatcher.jpg",
           name: "Spirit Catcher Wand",
           description:
             'Grape vine core. Raw Selenite. Copper and twine wrapped. 26.5"Long. Spirit catcher is 6"Diameter. (Special Caution recommended.)',
@@ -69,7 +69,7 @@ export default {
           cost: "$66",
         },
         {
-          image: "crystals.jpeg",
+          image: "twilight-2.jpg",
           name: "Twilight Wand",
           description:
             "Twine and sacred cannabis branches encircle raw fluorite and raw amethyst in this small but powerful wand. A spell vial sealed with wax dangles playfully as you bless and imbue with this magicians tool.",
@@ -78,7 +78,7 @@ export default {
           cost: "$125",
         },
         {
-          image: "crystals.jpeg",
+          image: "candle-quartz-2.jpg",
           name: "Candle Quartz Driftwood",
           description:
             "A breathtaking piece designed and created by Soltive. This California driftwood wall hanging is adorned with dried flowers and quartz, with its focal point being a magnificent candle quartz pointing toward the heavens.",
@@ -87,7 +87,7 @@ export default {
           cost: "$45",
         },
         {
-          image: "crystals.jpeg",
+          image: "pronged-driftwood-3.jpg",
           name: "Pronged Driftwood",
           description:
             "California driftwood with delicate shells and quartz, smokey quartz, amethyst and citrine.",
@@ -96,7 +96,7 @@ export default {
           cost: "$20",
         },
         {
-          image: "crystals.jpeg",
+          image: "siren-conch-1.jpg",
           name: "Siren Conch",
           description: "Majestic conch shell adorned with multiple crystals.",
           credit:
@@ -104,24 +104,16 @@ export default {
           cost: "$20",
         },
         {
-          image: "crystals.jpeg",
+          image: "music-note-terrarium-1.jpg",
           name: "Music Note Terrarium",
           description: "A bowl of magic.",
           credit:
             ' One of a kind original by <a href="https://instagram.com/_soltive?utm_medium=copy_link" target="_blank">Soltive.</a></div>',
           cost: "$10",
         },
+
         {
-          image: "crystals.jpeg",
-          name: "Triple Opal Necklace",
-          description:
-            "Three beautiful opals align, copperformed by hand with a delicate crescent moon.",
-          credit:
-            'Handcrafted and copperformed in Virginia, USA. One of a kind original by <a href="https://arcaneascents.com/" target="_blank">Arcane Ascents.</a></div>',
-          cost: "$86",
-        },
-        {
-          image: "crystals.jpeg",
+          image: "whimsey-necklace-2.jpg",
           name: "Whimsy Necklace",
           description:
             "A very special piece. Playful moon, stars and iolite dangle from the heart of this necklace, a dazzling labradorite.",
@@ -130,7 +122,7 @@ export default {
           cost: "$130",
         },
         {
-          image: "crystals.jpeg",
+          image: "monet-opal-necklace.jpg",
           name: "Monet Opal Heart Necklace",
           description: "Delicate beauty.",
           credit:
@@ -138,7 +130,16 @@ export default {
           cost: "$75",
         },
         {
-          image: "crystals.jpeg",
+          image: "triple-opal-necklace.jpg",
+          name: "Triple Opal Necklace",
+          description:
+            "Three beautiful opals align, copperformed by hand with a delicate crescent moon.",
+          credit:
+            'Handcrafted and copperformed in Virginia, USA. One of a kind original by <a href="https://arcaneascents.com/" target="_blank">Arcane Ascents.</a></div>',
+          cost: "$86",
+        },
+        {
+          image: "cloud-necklace.jpg",
           name: "Stormy Night Cloud Necklace",
           description:
             "Stormcloud blue lace agate with rose quartz moon with star and toggle closure.",
