@@ -24,4 +24,8 @@ export default {
   color: #3b5255;
   background-color: rgba(218, 228, 238, 0.562);
 }
+
+.navbar-toggler {
+  background-color: rgb(64, 224, 198) !important;
+}
 </style>
