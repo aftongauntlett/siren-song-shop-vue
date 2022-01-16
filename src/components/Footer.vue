@@ -13,14 +13,20 @@
       </b-link>
     </div>
 
-    <div class="pt-5 footer-links">
-      <div class="pr-5 links" v-for="link in links" :key="link.name">
+    <div class="pt-3 footer-links">
+      <div class="links" v-for="link in links" :key="link.name">
         <b-link :to="{ name: link.name }"> {{ link.display }}</b-link>
       </div>
     </div>
 
     <div class="copyright">
       © Copyright 2022 - Siren Song Shop - All Rights Reserved
+    </div>
+    <div class="gauntlet">
+      Built by
+      <a href="https://gauntletdesigns.com/" target="_blank"
+        >Gauntlet Designs</a
+      >
     </div>
   </b-container>
 </template>
@@ -55,11 +61,12 @@ export default {
 <style scoped>
 .footer-links {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-image {
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 
@@ -69,14 +76,20 @@ export default {
 }
 
 .copyright {
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
+  margin-top: 15px;
+  padding-bottom: 15px;
   justify-content: center;
   font-size: 30px;
   font-family: "Tangerine", cursive;
   color: rgb(161, 201, 201) !important;
+}
+
+.gauntlet {
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Tangerine", cursive;
+  color: rgb(161, 201, 201) !important;
+  padding-bottom: 15px;
 }
 
 .links {
