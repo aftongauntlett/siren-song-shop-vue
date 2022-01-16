@@ -12,12 +12,13 @@
           </div>
         </b-container>
       </div>
+      <div class="transparent-background">
+        <Icons class="pt-5 pb-5" />
+      </div>
     </div>
-    <Icons class="pt-5 pb-5" />
     <div class="home-wares">
       <HomeWares />
     </div>
-
     <About />
   </div>
 </template>
@@ -42,6 +43,9 @@ export default {
 </script>
 
 <style scoped>
+.transparent-background {
+  background-color: rgba(240, 242, 247, 0.918);
+}
 .home-wares {
   background-color: rgb(210, 230, 238);
 }
