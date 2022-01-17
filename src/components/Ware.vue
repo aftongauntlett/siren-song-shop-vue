@@ -1,6 +1,11 @@
 <template>
   <li class="d-flex flex-column">
     <b-img :src="imageLocation" class="img"></b-img>
+
+    <b-button v-b-modal="item.name" class="modal-button"
+      >See More Images</b-button
+    >
+
     <div class="name p-3 pt-5">
       {{ item.name }}
     </div>
@@ -36,6 +41,30 @@ export default {
 </script>
 
 <style scoped>
+.modal-button {
+  border-radius: unset;
+}
+
+.modal-image {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.164);
+}
+
+.modal-button {
+  background-color: rgb(51, 159, 167);
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.modal-button:hover {
+  background-color: rgba(51, 159, 167, 0.644);
+  font-size: 18px;
+}
+
 .img {
   max-height: auto;
   width: auto;

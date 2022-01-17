@@ -258,30 +258,78 @@
         gratitude we say thank you!!!
       </div>
     </div>
-    <Button
-      class="pt-3"
-      text="Donate through Venmo"
-      link="https://venmo.com/u/CallySmith"
-    />
-    <Button
-      text="Donate through PayPal"
-      link="https://www.paypal.me/sirensongshop"
-    />
-    <Carousel class="pt-4" />
+
+    <div
+      class="sparkle-container m-3 mx-auto"
+      @mouseover="showSparkles = true"
+      @mouseout="showSparkles = false"
+    >
+      <Sparkles
+        v-show="showSparkles"
+        v-for="sparkle in sparkleCount"
+        :key="sparkle"
+        :id="sparkle"
+      />
+
+      <b-icon-venmo>
+        <b-btn
+          href="https://venmo.com/u/CallySmith"
+          target="_blank"
+          class="main-button my-5 mr-5"
+          >Venmo</b-btn
+        >
+      </b-icon-venmo>
+
+      <b-icon-paypal>
+        <b-btn
+          href="https://www.paypal.me/sirensongshop"
+          target="_blank"
+          class="main-button my-5"
+          >Paypal</b-btn
+        >
+      </b-icon-paypal>
+    </div>
   </b-container>
 </template>
 
 <script>
 import Button from "../components/Button.vue";
-import Carousel from "../components/Carousel.vue";
 import Header from "../components/Header.vue";
+import Sparkles from "@/components/Sparkles";
 
 export default {
-  components: { Header, Button, Carousel },
+  components: { Header, Button, Sparkles },
+  data() {
+    return {
+      sparkleCount: 15,
+      showSparkles: false,
+    };
+  },
 };
 </script>
 
 <style scoped>
+.sparkle-container {
+  position: relative;
+  z-index: 999 !important;
+}
+
+.btn {
+  color: #3b5255;
+  border: #3b5255 solid 1px;
+  border-radius: unset;
+  padding: 15px;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.btn:hover {
+  border: rgb(50, 133, 201) solid 1px !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: rgb(50, 133, 201);
+}
+
 .donate {
   font-size: 23px;
   padding-bottom: 23px;
@@ -297,7 +345,7 @@ export default {
 .donate-header {
   text-align: center;
   font-size: 30px;
-  color: #29a397e5;
+  color: rgb(50, 133, 201);
 }
 
 .donate-image {

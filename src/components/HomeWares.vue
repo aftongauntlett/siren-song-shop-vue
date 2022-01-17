@@ -47,7 +47,7 @@ export default {
       showSparkles: false,
       items: [
         {
-          image: "crystals.jpeg",
+          image: "spiritcatcher.jpg",
           name: "Spirit Catcher Wand",
           description:
             'Grape vine core. Raw Selenite. Copper and twine wrapped. 26.5"Long. Spirit catcher is 6"Diameter. (Special Caution recommended.)',
@@ -56,7 +56,7 @@ export default {
           cost: "$66",
         },
         {
-          image: "crystals.jpeg",
+          image: "twilight-2.jpg",
           name: "Twilight Wand",
           description:
             "Twine and sacred cannabis branches encircle raw fluorite and raw amethyst in this small but powerful wand. A spell vial sealed with wax dangles playfully as you bless and imbue with this magicians tool.",

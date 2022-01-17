@@ -15,7 +15,6 @@
     </transition>
   </div>
 </template>
-
 <script>
 import Velocity from "velocity-animate";
 export default {
@@ -43,31 +42,24 @@ export default {
         {
           translateY: `${Math.random() * 200 - 100}px`,
           translateX: `${Math.random() * 200 - 100}px`,
-
-          //   Leaves Effect
-          // translateY: `${Math.random() * 1000}px`,
-          //   translateX: `${Math.random() * 2500}px`,
-
           opacity: 0,
         },
         { duration: 1250, promiseRejectEmpty: false }
       );
     },
   },
-
   data() {
     return {
       show: true,
       top: 0,
       left: 0,
-      color: "red",
       size: 0,
+      color: "#00675b",
       colors: ["#00675b", "#00766c", "#82ada9"],
     };
   },
 };
 </script>
-
 <style scoped lang="scss">
 .sparkles {
   position: absolute;

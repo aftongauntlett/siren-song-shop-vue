@@ -14,7 +14,6 @@
       type="button"
       class="main-button btn btn-outline-primary px-4 m-4"
       :to="link"
-      target="_blank"
       variant="link"
     >
       {{ text }}
@@ -60,9 +59,9 @@ export default {
 }
 
 .btn-outline-primary:hover {
-  border: #00675b solid 1px !important;
+  border: rgb(50, 133, 201) solid 1px !important;
   background-color: unset !important;
-  color: #00675b;
+  color: rgb(50, 133, 201);
 }
 
 .sparkle-container {
